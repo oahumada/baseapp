@@ -15,7 +15,6 @@
     <body>
         <div class="container">
         <div class="row">
-        <button type="button" class="btn btn-primary">Primary</button>
         <h1>Hola</h1>
             <div id="app"></div>
         </div>
