@@ -1,0 +1,6 @@
+I WANT TO LOGIN EN SISTEMA DE GESTION VITAM PERO NO ESTOY AUTENTICADO
+
+I am on page '/app/home' 
+I see 'Recordar' 
+I see in current url '/'
+

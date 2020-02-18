@@ -13,12 +13,12 @@
 
 
 Route::get('/', function () {
-    return view('/auth/login');
+    return view('auth.login');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
+Route::get('/app/home', 'HomeController@index')->name('home')->middleware('auth');
 
 /*
 Route::prefix('auth')->group(function (){

@@ -6,6 +6,7 @@
         <div class="col-md-8">
 
             <div id="app"></div>
+
         </div>
     </div>
 </div>

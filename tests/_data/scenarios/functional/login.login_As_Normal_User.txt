@@ -1,0 +1,9 @@
+I WANT TO LOGIN EN SISTEMA DE GESTION VITAM
+
+I am on page '/login' 
+I fill field 'email'," 'omar.ahumadag@gmail.com' 
+I fill field 'password'," 'clave123' 
+I click 'Login' 
+I see 'Vitam' 
+I see in current url '/app/home'
+

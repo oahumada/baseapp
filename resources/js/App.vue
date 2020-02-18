@@ -1,20 +1,18 @@
 <template>
   <div id="app">
-    <app-header />
-    <router-view></router-view>
+    <transition>
+    <app-landing></app-landing>    
+    </transition>
   </div>
 </template>
 
 <script>
-  import Header from './components/header/header.vue'
+  import Landing from './components/content/landing.vue'
   export default {
     name: 'app',
     components: {
-      'app-header': Header
+      'app-landing': Landing
     },
-    created () {
-      this.$store.dispatch('tryAutoLogin')
-    }
   }
 </script>
 
