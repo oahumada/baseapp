@@ -13,20 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-/*Route::post('login', 'PassportController@login');
-Route::post('register', 'PassportController@register');*/
- 
-Route::middleware('auth:api')->prefix('auth')->group(function(){
-        Route::get('/user', function (Request $request) {
-        return $request->user();
+ Route::middleware('auth:api')->prefix('api')->group(function(){
+      Route::get('user', function (Request $request) {
+      return $request->user();
     });
-});
 
-/*
-Route::group(array('prefix' => 'app'), function () {
-    Route::resource('shows', function(){
-        
-    });
-    Route::resource('episode', 'EpisodesApiController');
-    Route::resource('genre', 'GenresApiController');
-});*/
+   //Route::resource('cliente', 'ClienteController');
+});

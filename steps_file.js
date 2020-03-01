@@ -5,6 +5,11 @@ module.exports = function() {
 
     // Define custom steps here, use 'this' to access default methods of I.
     // It is recommended to place a general 'login' function here.
-
+    loginPage: function (email, password) {
+      this.amOnPage('/login')
+      this.fillField('email', email);
+      this.fillField('password', password);
+      this.click('Login');
+    }
   });
 }

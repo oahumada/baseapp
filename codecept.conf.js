@@ -9,8 +9,8 @@ exports.config = {
   output: './tests/testjs/outputs',
   helpers: {
     Puppeteer: {
-      url: 'http://localhost',
-      show: true
+      url: 'http://localhost:8000',
+      show: false
     },
     MockRequest: {}
   },
@@ -25,7 +25,7 @@ exports.config = {
       enabled: true
     },
     screenshotOnFail: {
-      enabled: true
+      enabled: false
     }
   }
 }

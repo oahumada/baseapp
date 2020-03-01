@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from './axios-auth'
 import globalAxios from 'axios'
-
 import router from './router'
 
 Vue.use(Vuex)
@@ -11,7 +10,9 @@ export default new Vuex.Store({
   state: {
     idToken: null,
     userId: null,
-    user: null
+    user: null,
+    csfr_token: null,
+    passport_token: null
   },
   mutations: {
     authUser (state, userData) {

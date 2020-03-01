@@ -1,0 +1,42 @@
+{
+  "id": "f6c452a1-5f15-4281-97fe-ad34db44365a",
+  "version": "2.0",
+  "name": "Proyecto Vitam",
+  "url": "",
+  "tests": [{
+    "id": "3ddf3be5-f7d3-4f83-b394-b7fbaf63dfe5",
+    "name": "Untitled",
+    "commands": [{
+      "id": "2528755f-5acc-43ef-844c-350f29dd9a20",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "576aa2a3-9536-4431-bf23-98f5b812248f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f35ab462-29a4-4482-965b-294f62fe834c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3666209e-7680-4348-abea-1e04262506ad",
+    "name": "Autenticacion",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3ddf3be5-f7d3-4f83-b394-b7fbaf63dfe5"]
+  }],
+  "urls": [],
+  "plugins": []
+}

@@ -16,12 +16,15 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+
 Auth::routes();
 
-Route::get('/app/home', 'HomeController@index')->name('home')->middleware('auth');
+Route::prefix('app')->middleware('auth')->group(function(){
 
-/*
-Route::prefix('auth')->group(function (){
-           
-    
-});*/
+   Route::get('home', 'HomeController@index');
+   
+   Route::get('{any}', function () {
+        return view('app/home');
+    })->where('any', '.*');
+
+});

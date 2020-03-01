@@ -7,7 +7,8 @@
 actor: AcceptanceTester
 modules:
     enabled:
-        - PhpBrowser:
-            url: http://vitamapp.web
+        - phpBrowser:
+            url: http://localhost:8000
+            browser: chrome
         - \Helper\Acceptance
     step_decorators: ~        
